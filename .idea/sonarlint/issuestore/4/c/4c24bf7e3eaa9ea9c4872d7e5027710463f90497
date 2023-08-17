@@ -1,0 +1,15 @@
+
+r
+java:S1104"VMake TXT_NOMBRE a static final constant or non-public and provide accessors if needed.(÷â8‘ŒäúŸ1
+z
+java:S1104	"XMake TXT_CANTIDAD a static final constant or non-public and provide accessors if needed.(½³²ıÿÿÿÿÿ8‘ŒäúŸ1
+L
+java:S1444"0Make this "public static TXT_NOMBRE" field final(÷â8‘ŒäúŸ1
+T
+java:S1444	"2Make this "public static TXT_CANTIDAD" field final(½³²ıÿÿÿÿÿ8’ŒäúŸ1
+q
+java:S3008"URename this field "TXT_NOMBRE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷â8’ŒäúŸ1
+y
+java:S3008	"WRename this field "TXT_CANTIDAD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½³²ıÿÿÿÿÿ8’ŒäúŸ1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(®ğ™Ãşÿÿÿÿ8”ŒäúŸ1

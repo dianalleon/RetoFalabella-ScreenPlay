@@ -1,6 +1,5 @@
 package com.falabella.tasks;
 
-import com.falabella.interactions.ClickRandom;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -14,9 +13,11 @@ public class AgregarProductoCarritoTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+
+        actor.remember("nombreProducto", LB_NOMBRE.toString());
         actor.attemptsTo(
                 Click.on(BTN_AGREGAR_CARRITO),
-                Enter.theValue(String.valueOf(ClickRandom.getNumero())).into(TXT_CANTIDAD).thenHit(Keys.ENTER),
+                Enter.theValue("3").into(TXT_CANTIDAD).thenHit(Keys.ENTER),
                 Click.on(BTN_IR_CARRITO)
         );
     }

@@ -6,7 +6,6 @@ import java.util.Map;
 public class Data {
 
     public static List<Map<String, String>> extractTo(){
-
         List<Map<String, String>> data;
 
         try {

@@ -15,6 +15,7 @@ public class SeleccionarProductoTask implements Task {
         );
 
     }
+
     public static SeleccionarProductoTask on(){
         return instrumented(SeleccionarProductoTask.class);
     }

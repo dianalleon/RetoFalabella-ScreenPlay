@@ -15,7 +15,6 @@ import org.hamcrest.Matchers;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
-import static org.hamcrest.Matchers.equalTo;
 
 public class AgregarProductoStepDefinitions {
 
@@ -30,8 +29,8 @@ public class AgregarProductoStepDefinitions {
                 Open.url("https://www.falabella.com.co/falabella-co"),
                 BuscarProductoTask.on()
         );
-
     }
+
     @Cuando("el usuario selecciona un producto aleatoriamente y da click en agregar al carrito")
     public void elUsuarioSeleccionaUnProductoAleatoriamenteYDaClickEnAgregarAlCarrito() {
         theActorInTheSpotlight().attemptsTo(

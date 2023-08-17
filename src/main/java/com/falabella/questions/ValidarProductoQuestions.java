@@ -18,5 +18,4 @@ public class ValidarProductoQuestions implements Question<Boolean> {
     public static Question<Boolean> from(){
         return new ValidarCantidadCarritoQuestions();
     }
-
 }

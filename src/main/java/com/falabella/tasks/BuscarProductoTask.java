@@ -12,6 +12,7 @@ import static com.falabella.ui.BuscarProductoUI.TXT_BUSCADOR;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class BuscarProductoTask implements Task {
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
@@ -19,6 +20,6 @@ public class BuscarProductoTask implements Task {
                 Enter.theValue(Data.extractTo().get(0).get("PRODUCTO")).into(TXT_BUSCADOR).thenHit(Keys.ENTER)
         );
     }
-    public static  BuscarProductoTask on(){ return instrumented(BuscarProductoTask.class);}
 
+    public static  BuscarProductoTask on(){ return instrumented(BuscarProductoTask.class);}
 }

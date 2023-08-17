@@ -15,10 +15,6 @@ public class ClickRandom implements Interaction {
     public <T extends Actor> void performAs(T actor) {
         ListOfWebElementFacades listProducts = LIST_PRODUCTOS.resolveAllFor(actor);
         int indexRandom = (new Random()).nextInt(listProducts.size());
-
-        Integer numeroAleatorio = (new Random()).nextInt(5);
-        actor.remember("numeroAleatorio",numeroAleatorio );
-
         listProducts.get(indexRandom).click();
     }
 

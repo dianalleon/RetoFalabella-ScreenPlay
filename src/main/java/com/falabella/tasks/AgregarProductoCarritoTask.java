@@ -13,7 +13,6 @@ public class AgregarProductoCarritoTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-
         actor.remember("nombreProducto", LB_NOMBRE.toString());
         actor.attemptsTo(
                 Click.on(BTN_AGREGAR_CARRITO),

@@ -8,5 +8,4 @@ public class BuscarProductoUI {
             .locatedBy("//*[@id='testId-accept-cookies-btn']");
     public static final Target TXT_BUSCADOR = Target.the("buscador")
             .locatedBy("//*[@id=\"testId-SearchBar-Input\"]");
-
 }

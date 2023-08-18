@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.Properties;
 
 public class HibernatePersistenceUnitInfo implements PersistenceUnitInfo {
-
     private static final String JPA_VERSION = "2.1";
     private final String persistenceUnitName;
     private PersistenceUnitTransactionType transactionType = PersistenceUnitTransactionType.RESOURCE_LOCAL;

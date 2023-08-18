@@ -1,5 +1,6 @@
 package com.falabella.stepDefinitions;
 
+import com.falabella.models.Producto;
 import com.falabella.questions.ValidarCantidadCarritoQuestions;
 import com.falabella.questions.ValidarProductoQuestions;
 import com.falabella.tasks.AgregarProductoCarritoTask;
@@ -12,6 +13,7 @@ import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.hamcrest.Matchers;
+import org.junit.Test;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
@@ -29,6 +31,8 @@ public class AgregarProductoStepDefinitions {
                 Open.url("https://www.falabella.com.co/falabella-co"),
                 BuscarProductoTask.on()
         );
+
+
     }
 
     @Cuando("el usuario selecciona un producto aleatoriamente y da click en agregar al carrito")

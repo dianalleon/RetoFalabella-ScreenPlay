@@ -36,6 +36,10 @@ dependencies {
     implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
     implementation 'org.slf4j:slf4j-simple:1.7.7'
     testImplementation 'junit:junit:4.13.1'
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    testCompileOnly 'org.projectlombok:lombok:1.18.28'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
 }
 
 test {
